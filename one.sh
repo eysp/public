@@ -16,5 +16,5 @@ docker rm portainer
 docker rmi portainer/portainer:linux-arm64
 docker rmi portainer/portainer-ce:linux-arm64
 docker run -d --restart=always --name="portainer" -p 9999:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data -v /root/public:/public portainer/portainer-ce:linux-arm64
-echo -e "${red} portainer部署成功，访问 "${ip}" :9999"
+echo -e "${red} portainer部署成功，访问 "${ip}":9999"
 echo -e "${plain}"
